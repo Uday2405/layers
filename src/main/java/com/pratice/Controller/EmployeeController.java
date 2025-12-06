@@ -13,14 +13,14 @@ import com.pratice.Service.EmployeeDataService;
 
 @RestController
 @EnableJpaRepositories
-@RequestMapping("/Employee")
+@RequestMapping("/Employeee")
 public class EmployeeController {
 	
 	
 	@Autowired
 	EmployeeDataService EmployeeService;
 	
-	@PostMapping("/add")
+	@PostMapping("/addd")
 	public EmployeeData addemployee(@RequestBody EmployeeData e) {
 		
 		EmployeeService.add(e); 
